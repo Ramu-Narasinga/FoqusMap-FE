@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { timeline } from './constants';
+import { Timeline, timeline } from './constants';
 
 @Component({
   selector: 'app-timeline',
@@ -13,6 +13,10 @@ export class TimelineComponent implements OnInit {
   timeline = timeline;
 
   ngOnInit(): void {
+  }
+
+  handleTimelineClick(tl: Timeline) {
+    console.log("received click inside handleTimeClick::", tl);
   }
 
 }

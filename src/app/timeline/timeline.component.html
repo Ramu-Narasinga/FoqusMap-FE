@@ -4,8 +4,12 @@
     <span class="tl-date-label">18</span>
   </div>
   <div class="tl">
-    <div class="tl-box" *ngFor="let tl of timeline">
-      <span class="tl-label">{{tl}}</span>
+    <div
+      class="tl-box"
+      *ngFor="let tl of timeline"
+      (click)="handleTimelineClick(tl)"
+    >
+      <span class="tl-label">{{tl.label}}</span>
     </div>
   </div>
 </div>
