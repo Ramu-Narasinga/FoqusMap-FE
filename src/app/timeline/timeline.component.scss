@@ -10,10 +10,11 @@
 .tl {
   padding: 0 50px;
   .tl-box {
-    padding: 20px;
-    border-bottom: 1px solid;
-    border-left: 1px solid;
+    height: 45px;
+    border-bottom: 1px solid #8080804f;
+    border-left: 1px solid #8080804f;
     position: relative;
+    cursor: pointer;
     .tl-label {
       position: absolute;
       top: 32px;
