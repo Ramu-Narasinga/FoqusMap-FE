@@ -1,0 +1,10 @@
+.timeline-task-container {
+  background: #4d27e6;
+  color: white;
+  height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  .tl-task-title, .tl-task-timeslot {
+    margin: 0 10px;
+  }
+}
