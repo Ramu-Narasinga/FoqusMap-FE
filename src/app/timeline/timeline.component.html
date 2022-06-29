@@ -9,11 +9,13 @@
       *ngFor="let tl of timeline"
       (click)="handleTimelineClick(tl)"
     >
+
       <span class="tl-label">{{tl.label}}</span>
       <app-timeline-task
         *ngIf="showTaskPlaceholder == tl.slot"
         [task]="tl"
       ></app-timeline-task>
+
     </div>
   </div>
 </div>
