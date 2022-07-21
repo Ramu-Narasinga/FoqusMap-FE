@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Timeline, timeline } from './constants';
+import { TimelineTask, timeline } from './constants';
 
 @Component({
   selector: 'app-timeline',
@@ -16,9 +16,13 @@ export class TimelineComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  handleTimelineClick(tl: Timeline) {
+  handleTimelineClick(tl: TimelineTask) {
     console.log("received click inside handleTimeClick::", tl);
     this.showTaskPlaceholder = tl.slot;
+  }
+
+  handleSave(tlData: TimelineTask) {
+    console.log("inside handleSave, tlData:", tlData);
   }
 
 }

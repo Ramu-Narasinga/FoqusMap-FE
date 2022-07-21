@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { TimelineTask } from '../../constants';
 @Component({
   selector: 'app-timeline-task-modal',
   templateUrl: './timeline-task-modal.component.html',
@@ -7,15 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimelineTaskModalComponent implements OnInit {
 
-  task: {
-    title: string
-  } = {
-    title: ''
+  @Input() task: TimelineTask;
+
+  @Output() addTaskEvent = new EventEmitter<TimelineTask>();
+
+  constructor() {
+    this.task = {
+      label: '',
+      startTime: '',
+      endTime: '',
+      slot: -1
+    }
   }
 
-  constructor() { }
-
   ngOnInit(): void {
+  }
+
+  handleSave() {
+    console.log("this.task inside timeline-task-modal-component::", this.task);
+    this.addTaskEvent.emit(this.task);
   }
 
 }
