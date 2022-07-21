@@ -1,11 +1,12 @@
-export type Timeline = {
+export type TimelineTask = {
   label: string;
+  description?: string;
   startTime: string;
   endTime: string;
   slot: number;
 }
 
-export const timeline: Timeline[] = [
+export const timeline: TimelineTask[] = [
   {
     label: '1 AM',
     startTime: '00am',

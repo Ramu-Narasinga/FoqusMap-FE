@@ -7,11 +7,12 @@
 
   <div class="timeline-modal-body-container">
     <div class="tlm-title-inp">
-      <input type="text" />
+      <input type="text" [(ngModel)]="task.label" />
     </div>
     <div class="tlm-description-inp">
-      <textarea type="text"></textarea>
+      <textarea type="text" [(ngModel)]="task.description" ></textarea>
     </div>
+    <button (click)="handleSave()">Add Task</button>
   </div>
 
 </div>

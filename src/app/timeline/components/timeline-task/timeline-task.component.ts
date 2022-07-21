@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Timeline } from '../../constants';
+import { TimelineTask } from '../../constants';
 
 @Component({
   selector: 'app-timeline-task',
@@ -8,7 +8,7 @@ import { Timeline } from '../../constants';
 })
 export class TimelineTaskComponent implements OnInit {
 
-  @Input() task: Timeline = {
+  @Input() task: TimelineTask = {
     label: '',
     slot: -1,
     startTime: '',

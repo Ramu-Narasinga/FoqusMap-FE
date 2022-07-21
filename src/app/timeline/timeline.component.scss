@@ -1,25 +1,31 @@
-.tl-subheading {
-  .tl-day-label {
-    font-size: 18px;
-  }
-  .tl-date-label {
-    display: block;
-    font-size: 24px;
-  }
-}
-.tl {
-  padding: 0 50px;
-  .tl-box {
-    height: 45px;
-    border-bottom: 1px solid #8080804f;
-    border-left: 1px solid #8080804f;
-    position: relative;
-    cursor: pointer;
-    .tl-label {
-      position: absolute;
-      top: 32px;
-      left: -44px;
-      font-size: 10px;
+.timeline-container {
+  position: relative;
+  .tl-subheading {
+    .tl-day-label {
+      font-size: 18px;
     }
+    .tl-date-label {
+      display: block;
+      font-size: 24px;
+    }
+  }
+  .tl {
+    padding: 0 50px;
+    .tl-box {
+      height: 45px;
+      border-bottom: 1px solid #8080804f;
+      border-left: 1px solid #8080804f;
+      position: relative;
+      cursor: pointer;
+      .tl-label {
+        position: absolute;
+        top: 32px;
+        left: -44px;
+        font-size: 10px;
+      }
+    }
+  }
+  .timeline-modal-container {
+    width: 100%;
   }
 }
